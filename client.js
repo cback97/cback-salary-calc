@@ -63,6 +63,12 @@ function monthlyCost() {
     for (i in employees) {
         monthlyCost = annualCost += employees[i].annualSalary / 12;
     } 
+    $('#monthlyCosts').empty().append(`<p id="cost"> Monthly Cost: ${Intl.NumberFormat("en-US", { style:"currency", currency: "USD"}).format(monthlyCost)}</p>`);
     console.log('Monthly Cost:',Intl.NumberFormat("en-US", { style:"currency", currency: "USD"}).format(monthlyCost));
-    $('#monthlyCosts').empty().append(`<p>Monthly Cost: ${Intl.NumberFormat("en-US", { style:"currency", currency: "USD"}).format(monthlyCost)}</p>`);
+    if (monthlyCost >= 20000) {
+        $('#cost').css('background-color', 'red');
+    }  else {
+        $('#cost').css('background-color', 'rgb(236, 236, 236)');
+    }
+    
 }
