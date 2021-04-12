@@ -7,7 +7,7 @@ $(document).ready(function () {
     // $('body').append();
 
     $('#uploadData').on('click', pushEmployeeInfo);
-
+    $('#employeeOutput').on('click', '.delete', removeEmployee);
 });
 
 
@@ -32,6 +32,10 @@ function pushEmployeeInfo() {
     console.log(employees);
     displayOutput();
     monthlyCost();
+}
+
+function removeEmployee(){
+    $(this).closest('tr').remove()
 }
 
 function displayOutput() {
