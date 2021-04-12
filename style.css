@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    background-color: deepskyblue;
+    color: ivory;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+header,
+h1 {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+main {
+    width: 60%;
+    margin: auto;
+    margin-top: 4.5rem;
+}
+
+input {
+    margin-bottom: 15px;
+    margin-right: 7px;
+}
+
+button {
+    margin-bottom: 1em;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align:center;
+}
