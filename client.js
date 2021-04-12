@@ -31,6 +31,7 @@ function pushEmployeeInfo() {
 
     console.log(employees);
     displayOutput();
+    monthlyCost();
 }
 
 function displayOutput() {
@@ -52,4 +53,14 @@ function displayOutput() {
             </tr>
         `)
     }
+}
+
+function monthlyCost() {
+    let annualCost = 0;
+    let monthlyCost = annualCost / 12;
+
+    for (i in employees) {
+        monthlyCost = annualCost += employees[i].annualSalary / 12;
+    }
+    console.log(monthlyCost)
 }
