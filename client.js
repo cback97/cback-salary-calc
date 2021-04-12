@@ -46,13 +46,14 @@ function displayOutput() {
                 <td>${member.lastName}</td>
                 <td>${member.id}</td>
                 <td>${member.Position}</td>
-                <td>${member.annualSalary}</td>
+                <td>${new Intl.NumberFormat("en-US", { style:"currency", currency: "USD"}).format(member.annualSalary)}</td>
                 <td>
                     <button class="delete">Delete</button>
                 </td>
             </tr>
         `)
     }
+    // new Intl.NumberFormat().format(member.annualSalary)
 }
 
 function monthlyCost() {
@@ -61,6 +62,6 @@ function monthlyCost() {
 
     for (i in employees) {
         monthlyCost = annualCost += employees[i].annualSalary / 12;
-    }
+    } 
     console.log(monthlyCost)
 }
