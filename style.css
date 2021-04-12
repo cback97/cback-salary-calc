@@ -3,7 +3,11 @@ h1 {
     background-color: deepskyblue;
     color: ivory;
     padding: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-family: sans-serif, Helvetica, Arial;
 }
 
 body,
@@ -35,6 +39,7 @@ table,
 td,
 th {
     border: 1px solid black;
+    font-family: Arial, sans-serif, Helvetica;
 }
 
 table {
@@ -43,5 +48,5 @@ table {
 }
 
 td {
-    text-align:center;
+    text-align: center;
 }

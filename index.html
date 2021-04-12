@@ -18,13 +18,13 @@
     <main>
         <section>
             <h3>Employee Data</h3>
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="text" placeholder="ID">
-            <input type="text" placeholder="Title">
-            <input type="text" placeholder="Annual Salary">
+            <input id="firstName" type="text" placeholder="First Name">
+            <input id="lastName" type="text" placeholder="Last Name">
+            <input id="ID" type="text" placeholder="ID">
+            <input id="Position" type="text" placeholder="Title">
+            <input id="annualSalary" type="text" placeholder="Annual Salary">
         </section>
-        <button>Submit Data</button>
+        <button id="uploadData">Submit Data</button>
 
         <table>
             <thead>
@@ -33,12 +33,14 @@
                     <th>Last Name</th>
                     <th>ID</th>
                     <th>Position</th>
+                    <th>Annual Salary</th>
+                    <th>&nbsp;</th>
                 </tr>
-            <tbody>
-                <td>Chistian</td>
+            <tbody id="employeeOutput">
+                <!-- <td>Chistian</td>
                 <td>Back</td>
-                <td>Fortunate</td>
-                <td>Personal Assistant</td>
+                <td>1234</td>
+                <td>Personal Assistant</td> -->
             </tbody>
             </thead>
         </table>
