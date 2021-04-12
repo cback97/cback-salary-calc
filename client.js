@@ -63,5 +63,6 @@ function monthlyCost() {
     for (i in employees) {
         monthlyCost = annualCost += employees[i].annualSalary / 12;
     } 
-    console.log(monthlyCost)
+    console.log('Monthly Cost:',Intl.NumberFormat("en-US", { style:"currency", currency: "USD"}).format(monthlyCost));
+    $('#monthlyCosts').empty().append(`<p>Monthly Cost: ${Intl.NumberFormat("en-US", { style:"currency", currency: "USD"}).format(monthlyCost)}</p>`);
 }
